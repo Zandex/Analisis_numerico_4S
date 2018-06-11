@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.edu.eafit.dis.analisisnumerico.equation_system.activity_class.JacobiActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nText"
+            android:layout_width="77dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="181dp"
+            android:ems="10"
+            android:hint="@string/n"
+            android:inputType="textPersonName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="82dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="93dp"
+            android:layout_marginTop="193dp"
+            android:onClick="onCreateClick"
+            android:text="Crear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bisText"
+            android:layout_width="204dp"
+            android:layout_height="57dp"
+            android:textSize="25dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/jacobi"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="2dp"
+            tools:layout_editor_absoluteX="43dp" />
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="133dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="94dp"
+            android:layout_marginTop="509dp"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="onCalculateClick"
+            android:text="Calcular"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/helpBtn"
+            android:layout_width="49dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:background="@android:drawable/ic_menu_help"
+            android:onClick="onHelpClick"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ScrollView
+            android:layout_width="164dp"
+            android:layout_height="234dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="251dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="5dp">
+
+                <TableLayout
+                    android:id="@+id/tableMatrixA"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp">
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="57dp"
+            android:layout_height="236dp"
+            android:layout_marginLeft="182dp"
+            android:layout_marginTop="251dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="5dp">
+
+                <TableLayout
+                    android:id="@+id/tableVectorB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp">
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="57dp"
+            android:layout_height="236dp"
+            android:layout_marginLeft="247dp"
+            android:layout_marginTop="251dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="5dp">
+
+                <TableLayout
+                    android:id="@+id/tableVectorX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp">
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="124dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/iterText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="128dp" />
+
+            <EditText
+                android:id="@+id/tolText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="74dp" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="600dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:drawable/picture_frame"
+                android:stretchColumns="*"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_light">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="@string/n"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+        <ImageButton
+            android:id="@+id/searchImageButton"
+            android:layout_width="57dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="56dp"
+            android:backgroundTint="@android:color/white"
+            android:onClick="onPivotingClick"
+            android:src="@mipmap/search_plus"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="63dp"
+            android:text="# Interaciones:"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="105dp" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="91dp"
+            android:text="Tolerancia:"
+            app:layout_constraintStart_toEndOf="@+id/textView42"
+            tools:layout_editor_absoluteY="105dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

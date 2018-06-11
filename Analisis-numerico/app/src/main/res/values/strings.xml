@@ -1,0 +1,331 @@
+<resources>
+    <string name="app_name">MANSLAA</string>
+    <string name="selec_option">Select an option</string>
+
+    <string name="close">Close</string>
+    <string name="fx">Function f(x)</string>
+    <string name="ffx">First Derivative</string>
+    <string name="fffx">Second Derivative</string>
+    <string name="gx">Function g(x)</string>
+    <string name="xi">Inferior limit or x0 value</string>
+    <string name="xs">Superior limit or x1 value</string>
+    <string name="x0">Initial value</string>
+    <string name="tol">Tolerance</string>
+    <string name="iter">Number of iterations</string>
+    <string name="res">Result</string>
+    <string name="send">calculate</string>
+    <string name="del">Delta</string>
+    <string name="sel">Select an option</string>
+    <string name="numPoint">Number of points</string>
+    <string name="lambda">Lambda</string>
+
+
+    <string name="bisection">Bisection</string>
+    <string name="false_rule">False Rule</string>
+    <string name="fixed_point">Fixed Point</string>
+    <string name="incremental_search">Incremental Search</string>
+    <string name="multiple_roots">Multiple Roots</string>
+    <string name="newton">Newton</string>
+    <string name="Secant">Secant</string>
+    <string name="graph">Graph View</string>
+    <string name="gaussian_Elimination">Gaussian Elimination</string>
+    <string name="LUFactorization_Cholesky">LU Factorization Cholesky</string>
+    <string name="LUFactorization_Doolittle">LU Factorization Doolittle</string>
+    <string name="LUFactorization_Crout">LU Factorization Crout</string>
+    <string name="jacobi">Jacobi</string>
+    <string name="gauss_Seidel">Gauss Seidel</string>
+    <string name="jacobi_Relaxed">Jacobi Relaxed</string>
+    <string name="gauss_Seidel_Relaxed">Gauss Seidel Relaxed</string>
+
+    <string name="dataMatrix">Insert n value and fill A,b</string>
+    <string name="createBtn">Create</string>
+
+    <string name="n">n</string>
+    <string name="xiT">xi</string>
+    <string name="xsT">xs</string>
+    <string name="xm">xm</string>
+    <string name="ym">ym</string>
+    <string name="error">error</string>
+    <string name="x0T">x0</string>
+    <string name="x1T">x1</string>
+    <string name="y0T">y0</string>
+    <string name="y1T">y1</string>
+    <string name="xn">xn</string>
+    <string name="yn">f(xn)</string>
+    <string name="dyn">f´(xn)</string>
+    <string name="ddyn">f´´(xn)</string>
+
+
+    <string name="pivotingMethods">Select a pivot method</string>
+    <string name="pivotMethods">Pivoting Methods</string>
+    <string name="partial">Partial</string>
+    <string name="scaled">Scaled</string>
+    <string name="total">Total</string>
+
+
+    <string name="bisectionHelp">Bisection method (Help)\n
+        It is important to know, the method assumes the existence of an interval with a root,
+        if a root doesn’t exist in the interval, the method will return error.
+        The data the algorithm asks to enter is an Interval [xi, xs], a maximum number of
+        iterations, a tolerance (How close will be the number to the real root) and the
+        function F who will be evaluated.
+        What the Bisection method does is divides an interval in two, using xn=(xi+xs)/2,
+        and evaluates this expression f(x1)*f(xn), xn being the middle number, If the
+        multiplication is less than zero so, the new xs is xn, else, the new xs is xi.
+        This process continues until it finds a root, the error is less than the tolerance
+        or failure, the maximum number of iterations has been reached or there are no
+        roots in the interval.
+        The convergence of this method is slow, but it will always theorically converge.\n
+        WARNING: The method won’t accept iterations under 1 and the tolerance must be higher than 0.
+    </string>
+
+    <string name="falseRuleHelp">False Rule (Help)\n
+        It is important to know, the method assumes the existence of an interval with a root,
+        if a root doesn’t exist in the interval, the method will return error.
+        The data the algorithm asks to enter is an Interval [xi, xs] or [a, b], a maximum
+        number of iterations, a tolerance (How close will be the number to the real root)
+        and the function F who will be evaluated.
+        What the False rule method does is divides an interval in two,
+        using xn=(aF(b)-bF(a))/(F(b)-F(a)) and evaluates the expression f(x1)*f(xn),
+        If the multiplication is less than zero so, the new xs is xn, else, the new xs
+        is xi. This process continues until it finds a root, the error is less than
+        the tolerance or failure, the maximum number of iterations has been reached
+        or there are no roots in the interval.
+        The convergence of this method is slow, but it will always theorically converge.\n
+        WARNING: The method won’t accept iterations under 1 and the tolerance must be higher than 0.
+    </string>
+
+    <string name="incrementalSearchHelp">
+        Incremental Search (Help)\n
+        The prompt of this method is a x0, x1, iterations and a function f.
+        This method assumes that the function f is continuous and allows us to find an
+        interval with a root, by means of the interactive evaluation of f0*f1, where
+        f0 = F(x0) and f1 = F(x1). If the multiplication is less than 0 so the method
+        finds a root, but x0 and x1 can also be a root.
+        The method ends when it finds a root or completes the max number of iterations,
+        which is a failure, if f is not continuous, the expression evaluator will send
+        an error if somehow it finds an Asymptote.\n
+        WARNING: The method won’t accept iterations under 1 and null deltas.
+    </string>
+
+    <string name="fixedPointHelp">
+        Fixed Point Method (Help)\n
+        Also, known as an open method, open methods are called like that because they
+        do not need a specific interval, but with one number they can start the process.
+        This method will prompt a x, number of iterations, a tolerance, a
+        function f and a function g.
+        This method redefines the original equation f(x)=0 and generates a new equation
+        g(x), that allows to find a new value x where x=g(x) and f(x) coincide with zero.
+        It’s important to notice that g(x) is just a variation of f(x), and there’s
+        good and bad g(x) functions that are determined by these 3 conditions:
+            1.	X is part of [a,b] and g is also a part of [a,b]
+            2.	g is continuous in [a,b]
+            3.	|g’(x)| less-equal k less 1
+        If these conditions meet, the method will theorically converge on a root,
+        and it’s speed of convergence will depend on both f(x) and g(x).\n
+        WARNING: The method won’t accept iterations under 1 and the tolerance must be higher than 0.
+    </string>
+
+    <string name="newtonHelp">
+        Newton Method\n
+        This method is a variant of fixed point method, so the way the algorithm
+        works is similar, the difference is between them is that g(x) is calculated
+        based on this formula g(x) = [x – (f(x) / f ’(x))].
+        This method is excellent when it’s easy to know the first derivate
+        of the function, because it converges on a much faster rate than the Fixed Point method.
+        To get a better understanding of the way the method works, please see the Fixed Point help.\n
+        WARNING: The method won’t accept iterations under 1 and the tolerance must be higher than 0.
+    </string>
+
+    <string name="secantHelp">
+        Secant Method\n
+        This method is a variant of the fixed point method, so the way it works is similar,
+        the secant method uses two initial values x0 and x1 to create a new value x2
+        with the following equation x|i+1|=x|i| * (f(x|i|)*(x|1|-x|i-1|)/(f(x|i|)*(f(x|i-1|)))
+        In addition, the method deletes x0 and continues creating a new value
+        with x1 and x2, this process is repeated until it finishes by success or by failure.
+        This method is the most used nowadays for the easiness of it’s implementation
+        and because it’s convergence it’s almost as fast as the Newton method
+        without calculating a derivate.
+        To get a better understanding of the way the method works, please see the Fixed Point help.\n
+        WARNING: The method won’t accept iterations under 1 and the tolerance must be higher than 0.
+    </string>
+
+    <string name="multipleRootsHelp">
+        Multiple Roots Method\n
+        This method is a variant of the methods of fixed point and Newton,
+        the multiple roots does the same procedure as the Newton method,
+        but the method instead calculates the root with this equation
+        g(x)=x−(f(x)*f′(x)/((f′(x))^2−f(x)*f′′(x)))
+        This method is excellent when it’s easy to know the first and second derivates
+        of the function, because it converges on a much faster rate than
+        Fixed Point and Newton methods.
+        To get a better understanding of the way the method works, please see
+        the Fixed Point help.\n
+        WARNING: The method won’t accept iterations under 1 and the tolerance must be higher than 0.
+    </string>
+
+    <string name="gaussianEliminationHelp">
+        This method has two processes, the first is to perform transformations
+        on the equation system using elementary operations (multipliers) to obtain
+        an equivalent system of equations whose coefficient matrix is upper triangular,
+        and the second is a substitution of these values to obtain the n number of
+        results of the variables of the system. Gaussian Elimination uses Regressive Substitution
+        This method will prompt you for an A and a n, being A the matrix to be iterated
+        and n being the order of the square matrix.\n
+        WARNING: The method won’t accept orders under 2, and incase it’s 1 it will return the same
+        number.
+    </string>
+
+    <string name="LUFactorizationGeneralHelp">
+        The LU factorizations are used to solve a system of equations Ax = b
+        using a permutation of the A matrix to decompose it into two matrixes L and U.
+        Depending of the method, the diagonal of the matrix L or U will change,
+        Cholesky will have the diagonal of L and U the same, Crout will have all
+        the diagonal of U being 1 and Doolittle will have the diagonal of L being 1.
+        After getting L and U, they both can be used with progressive or regressive
+        substitution to get the result of an equation system.
+        These methods will prompt a matrix A to be decomposed and the order of the square matrix n.\n
+        WARNING: These methods won’t accept orders under 2, and incase it’s 1 they will return the
+        same number.
+    </string>
+
+    <string name="jacobiHelp">
+        This method is used to find the roots in an equation system using the same algorithmia as
+        the fixed point method.
+        This method structure is like the fixed point method, it prompts for an
+        initial value for each variable of the equation system and then it iterates.
+        This method has cases when it doesn’t converge. The norm for stopping the method is the
+        Euclidean.
+        For better understanding, please see fixed point help.\n
+        WARNING: The method won’t accept orders under 2, and incase it’s 1 it will return the same
+        number.
+    </string>
+
+    <string name="gaussSeidelHelp">
+        This method structure is a variant of the Jacobi Method, it prompts for an
+        initial value for each variable and then it iterates but it doesn’t always
+        converge, the difference between Jacobi and this one is the new values of
+        the matrix are used immediately instead of every outer cycle iteration.
+        The norm for stopping the method is the Euclidean.
+        For better understanding, please see fixed point help and Jacobi help.\n
+        WARNING: The method won’t accept orders under 2, and incase it’s 1 it will return the same
+        number.
+    </string>
+
+    <string name="relaxedGeneralHelp">
+        The relaxation method is based on improving the convergence of Jacobi and
+        Gauss Seidel methods using an altered form of calculating the new values using a lambda.
+        It prompts for a value (lambda) and it can make the method converge faster,
+        slower or not converge at all.
+    </string>
+
+    <string name="pivotHelp">
+        Note: first you need to create and fill a matrix\n
+        Partial Pivoting\n
+        With this method the idea is to find the largest among |aik| with k less equal
+        i less equal n, and the exchange is made to locate the highest chosen in row k,
+        in other words, the method will find the highest number in every column and then exchanges
+        row in order to put those highest numbers in the diagonal.\n
+        Scale Pivoting\n
+        At the beginning, a scale factor must be computed for each equation in the system.
+        These n numbers are recorded in the scale vector s. In starting the forward elimination
+        process, we do not arbitrarily use the first equation as the pivot equation. Instead,
+        we use the equation for which the ratio |ai,1|/si is greatest. Let aux1 be the first
+        index for which this ratio is greatest. Now appropriate multiples of equation aux1
+        are subtracted from the other equations to create 0’s as coefficients for each x1
+        except in the pivot equation.\n
+        Total Pivoting\n
+        This method is based on at each step k , the major element in absolute value will
+        be searched between the submatrix elements that result from deleting the row f1 to
+        f (k-1) and the columns c1 to c (k-1) in the A matrix, regardless of the independent
+        terms. Once detected, the greatest of these elements the rows and columns positions
+        will be replaced for placement in Akk. When performing column exchange it must be
+        considered that it alters the order of the variables in the system.
+    </string>
+
+    <string name="newton_Divided">Newton Divided Differences</string>
+    <string name="lagrange">Lagrange</string>
+    <string name="neville">Neville</string>
+    <string name="linear">Linear Spline</string>
+    <string name="quadratic">Quadratic Spline</string>
+    <string name="cubic">Cubic Spline</string>
+
+
+    <string name="newton_Divided_Help">Newton Divided Differences (Help)\n
+        The idea of this method is the construction of one polynomial that passes
+        right through or near the given points following the formula of p(x) = b0
+        (x-x0) + b1 (x-x0) (x-x1) + b2 (x-x0) (x-x1) (x-x2) … + bn (x-x0) … (x-xn).
+        The method will prompt two vectors: x and f(x), the size of the two vectors (n),
+        and a number y that will be the evaluated number in the polynomial result,
+        in other words, f(y). Using x and f(x), the method will find the diagonal
+        of the A matrix recursively using the formula A[i,k+1]=(A[i,k]-A[p,k])/(X[i]-X[p]),
+        the meaning of the diagonal is the coefficients b used for the polynomial.\n
+        WARNING: This method won’t accept null or negative sizes.
+    </string>
+
+    <string name="lagrange_Help">Lagrange (Help)\n
+        The idea of this method is the construction of one polynomial that passes
+        right through or near the given points following the formula
+        of p(x) = L0f(x0) + L1f(x1) + L2f(x2) … + Lnf(xn).
+        The method will prompt a vector x, a function f, the size of the vector (n),
+        and a number y that will be the evaluated number in the polynomial result,
+        in other words, f(y). Using x and f, the method will find the coefficients
+        L used for the polynomial using the
+        formula Ln(x)= (x-x1) … (x-xn) / (xn – x1) … (xn – xn-1).\n
+        WARNING: This method won’t accept null or negative sizes.
+    </string>
+
+    <string name="neville_Help">Neville (Help)\n
+        This method is a variant of the Newton Polynomial method, it’s useful
+        because it can add numbers to the matrix A both left and right side recursively.
+        The method will prompt two vectors: x and f(x), the size of the two vectors (n),
+        and a number y that will be the evaluated number in the polynomial result,
+        in other words, f(y) using the formula:
+        Pi,i(x) = yi;
+        Pi,j(x) = ((xj – x) * pi,j-1(x) + (x – xi)*pi+1,j(x)) / xj -xi
+        To get a better understanding of the method, please see the Newton’s Polynomial Help.\n
+        WARNING: This method won’t accept null or negative sizes.
+    </string>
+
+    <string name="linear_Help">Linear Spline (Help)\n
+        Linear spline is used to simulate a function f, f will be a set of lines that
+        pass through the given points.\n
+        This method will prompt two vectors: f and x, the size of the
+        vectors (n) and a number to be evaluated y.\n
+        WARNING: This method won’t accept null or negative sizes.
+    </string>
+
+    <string name="quadratic_Help">Quadratic Spline (Help)\n
+        Linear spline is used to simulate a function f, f will be a set of parabolas
+        that pass through the given points, the exception is the first
+        function (x0,x1) being a line.\n
+        This method will prompt two vectors: f and x, the size of the
+        vectors (n) and a number to be evaluated y.\n
+        WARNING: This method won’t accept null or negative sizes.
+    </string>
+
+    <string name="cubic_Help">Cubic Spline (Help)\n
+        Linear spline is used to simulate a function f, f will be a set of curves
+        that pass through the given points.\n
+        This method will prompt two vectors: f and x, the size of the
+        vectors (n) and a number to be evaluated y.\n
+        WARNING: This method won’t accept null or negative sizes.
+    </string>
+
+    <string name="ExceptionE">
+        Error, please check the data, if the problem continues maybe this method
+        cannot operate correctly with the data provided.
+    </string>
+
+    <string name="ExceptionL">
+        Error loading data.
+    </string>
+    <!-- spline -->
+    <string name="f_vector">f Vector</string>
+    <string name="x_vector">x Vector</string>
+    <string name="y_value">y value</string>
+
+
+
+</resources>

@@ -18,60 +18,51 @@ import co.edu.eafit.dis.analisisnumerico.interpolation.activity_class.QuadraticS
 
 public class InterpolationActivity extends AppCompatActivity {
 
-    private static ListView list_view;
-    private static String[] METHODS = new String[] {
-            "Newton Divided Differences", "Lagrange", "Neville",
-            "Spline Lineal", "Spline Cuadratico", "Spline Cubico"
-    };
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_interpolation);
-        listView();
+
     }
 
-    public void listView(){
-        list_view = (ListView)findViewById(R.id.listView);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.method_list,METHODS);
-        list_view.setAdapter(adapter);
-        list_view.setOnItemClickListener(
-                new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        String value = (String)list_view.getItemAtPosition(position);
-                        Intent intent;
-                        switch(value){
-                            case "Newton Divided Differences":
-                                intent = new Intent(InterpolationActivity.this,NewtonDividedDifferenceActivity.class);
-                                startActivity(intent);
-                                break;
-                            case "Lagrange":
-                                intent = new Intent(InterpolationActivity.this,LagrangeActivity.class);
-                                startActivity(intent);
-                                break;
-                            case "Neville":
-                                intent = new Intent(InterpolationActivity.this,NevilleActivity.class);
-                                startActivity(intent);
-                                break;
-                            case "Spline Lineal":
-                                intent = new Intent(InterpolationActivity.this,LinearSplineActivity.class);
-                                startActivity(intent);
-                                break;
-                            case "Spline Cuadratico":
-                                intent = new Intent(InterpolationActivity.this,QuadraticSplineActivity.class);
-                                startActivity(intent);
-                                break;
-                            case "Spline Cubico":
-                                intent = new Intent(InterpolationActivity.this,CubicSplineActivity.class);
-                                startActivity(intent);
-                                break;
-                        }
 
-                    }
-                }
-        );
+
+    public void button_newton(View view) {
+        Intent intent;
+        intent = new Intent(InterpolationActivity.this,NewtonDividedDifferenceActivity.class);
+        startActivity(intent);
+    }
+
+    public void button_lagran(View view) {
+        Intent intent;
+        intent = new Intent(InterpolationActivity.this,LagrangeActivity.class);
+        startActivity(intent);
+    }
+
+    public void button_nevil(View view) {
+        Intent intent;
+        intent = new Intent(InterpolationActivity.this,NevilleActivity.class);
+        startActivity(intent);
+    }
+
+    public void button_spliline(View view) {
+        Intent intent;
+        intent = new Intent(InterpolationActivity.this,LinearSplineActivity.class);
+        startActivity(intent);
+    }
+
+    public void button_splicuadr(View view) {
+        Intent intent;
+        intent = new Intent(InterpolationActivity.this,QuadraticSplineActivity.class);
+        startActivity(intent);
+    }
+
+    public void button_splicubi(View view) {
+        Intent intent;
+        intent = new Intent(InterpolationActivity.this,CubicSplineActivity.class);
+        startActivity(intent);
     }
 }
 

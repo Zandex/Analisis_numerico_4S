@@ -24,7 +24,7 @@
 
     <ListView
         android:id="@+id/listView"
-        android:layout_width="256dp"
+        android:layout_width="127dp"
         android:layout_height="310dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -57,6 +57,60 @@
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/interpolacion" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Newton Divided Differences"
+        android:onClick="button_newton"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="135dp" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lagrange"
+        android:onClick="button_lagran"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neville"
+        android:onClick="button_nevil"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="260dp" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spline Lineal"
+        android:onClick="button_spliline"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="318dp" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spline Cuadratico"
+        android:onClick="button_splicuadr"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="376dp" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spline Cubico"
+        android:onClick="button_splicubi"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="435dp" />
 
 
 </android.support.constraint.ConstraintLayout>

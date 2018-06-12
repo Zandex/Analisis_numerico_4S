@@ -55,7 +55,7 @@
         android:layout_marginStart="77dp"
         android:layout_marginTop="21dp"
         android:onClick="button_newton"
-        android:text="Newton Divided Differences"
+        android:text="Diferencias Dividida Newton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 

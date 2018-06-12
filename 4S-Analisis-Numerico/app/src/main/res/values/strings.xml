@@ -1,44 +1,44 @@
 <resources>
-    <string name="app_name">MANSLAA</string>
-    <string name="selec_option">Select an option</string>
+    <string name="app_name">4´S Análisis Numérico</string>
+    <string name="selec_option">Menu</string>
 
-    <string name="close">Close</string>
-    <string name="fx">Function f(x)</string>
-    <string name="ffx">First Derivative</string>
-    <string name="fffx">Second Derivative</string>
-    <string name="gx">Function g(x)</string>
-    <string name="xi">Inferior limit or x0 value</string>
-    <string name="xs">Superior limit or x1 value</string>
-    <string name="x0">Initial value</string>
-    <string name="tol">Tolerance</string>
-    <string name="iter">Number of iterations</string>
-    <string name="res">Result</string>
-    <string name="send">calculate</string>
+    <string name="close">Cerrar</string>
+    <string name="fx">Función f(x)</string>
+    <string name="ffx">Primera Derivada</string>
+    <string name="fffx">Segunda Derivada</string>
+    <string name="gx">Función g(x)</string>
+    <string name="xi">Limite Inferior x0</string>
+    <string name="xs">Limite Superior x1</string>
+    <string name="x0">Variable Inicial</string>
+    <string name="tol">Tolerancia</string>
+    <string name="iter">Numero de Iteraciones</string>
+    <string name="res">Resultado</string>
+    <string name="send">Calcular</string>
     <string name="del">Delta</string>
-    <string name="sel">Select an option</string>
-    <string name="numPoint">Number of points</string>
+    <string name="sel">Opciones</string>
+    <string name="numPoint">Numero de Puntos</string>
     <string name="lambda">Lambda</string>
 
 
-    <string name="bisection">Bisection</string>
-    <string name="false_rule">False Rule</string>
-    <string name="fixed_point">Fixed Point</string>
-    <string name="incremental_search">Incremental Search</string>
-    <string name="multiple_roots">Multiple Roots</string>
+    <string name="bisection">Bisección</string>
+    <string name="false_rule">Regla Falsa</string>
+    <string name="fixed_point">Punto Fijo</string>
+    <string name="incremental_search">Busqueda Incremental</string>
+    <string name="multiple_roots">Raices Multiples</string>
     <string name="newton">Newton</string>
-    <string name="Secant">Secant</string>
-    <string name="graph">Graph View</string>
-    <string name="gaussian_Elimination">Gaussian Elimination</string>
-    <string name="LUFactorization_Cholesky">LU Factorization Cholesky</string>
-    <string name="LUFactorization_Doolittle">LU Factorization Doolittle</string>
-    <string name="LUFactorization_Crout">LU Factorization Crout</string>
+    <string name="Secant">Secante</string>
+    <string name="graph">Graficador</string>
+    <string name="gaussian_Elimination">Eliminación Gaussiana</string>
+    <string name="LUFactorization_Cholesky">LU Factorizacion Cholesky</string>
+    <string name="LUFactorization_Doolittle">LU Factorizacion Doolittle</string>
+    <string name="LUFactorization_Crout">LU Factorizacion Crout</string>
     <string name="jacobi">Jacobi</string>
     <string name="gauss_Seidel">Gauss Seidel</string>
     <string name="jacobi_Relaxed">Jacobi Relaxed</string>
     <string name="gauss_Seidel_Relaxed">Gauss Seidel Relaxed</string>
 
-    <string name="dataMatrix">Insert n value and fill A,b</string>
-    <string name="createBtn">Create</string>
+    <string name="dataMatrix">Inserte variable n en el campo A,b</string>
+    <string name="createBtn">Crear</string>
 
     <string name="n">n</string>
     <string name="xiT">xi</string>
@@ -56,10 +56,10 @@
     <string name="ddyn">f´´(xn)</string>
 
 
-    <string name="pivotingMethods">Select a pivot method</string>
-    <string name="pivotMethods">Pivoting Methods</string>
-    <string name="partial">Partial</string>
-    <string name="scaled">Scaled</string>
+    <string name="pivotingMethods">Seleccione un metodo de pivote</string>
+    <string name="pivotMethods">Metodos de pivote</string>
+    <string name="partial">Parcial</string>
+    <string name="scaled">Escalonado</string>
     <string name="total">Total</string>
 
 
@@ -247,9 +247,9 @@
     <string name="newton_Divided">Newton Divided Differences</string>
     <string name="lagrange">Lagrange</string>
     <string name="neville">Neville</string>
-    <string name="linear">Linear Spline</string>
-    <string name="quadratic">Quadratic Spline</string>
-    <string name="cubic">Cubic Spline</string>
+    <string name="linear">Spline Lineal</string>
+    <string name="quadratic">Spline Cuadratico</string>
+    <string name="cubic">Spline Cubico</string>
 
 
     <string name="newton_Divided_Help">Newton Divided Differences (Help)\n
@@ -322,9 +322,9 @@
         Error loading data.
     </string>
     <!-- spline -->
-    <string name="f_vector">f Vector</string>
-    <string name="x_vector">x Vector</string>
-    <string name="y_value">y value</string>
+    <string name="f_vector">Vector f</string>
+    <string name="x_vector">Vector x</string>
+    <string name="y_value">Variable y</string>
 
 
 

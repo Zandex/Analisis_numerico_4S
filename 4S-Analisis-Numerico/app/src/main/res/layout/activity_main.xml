@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo5"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/boton_e1v"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:text="Menu Principal"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:id="@+id/text_menu_principal"
+        />
+
+
+    <Button
+        android:id="@+id/boton_e1v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/boton_se"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#90a4ae"
+        android:drawableLeft="@drawable/e1_value"
+        android:drawablePadding="8dp"
+        android:text="Ecuaciones de una Variable"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/boton_se"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/boton_i"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="#78909c"
+        android:drawableLeft="@drawable/s_e"
+        android:drawablePadding="8dp"
+        android:text="Sistema de Ecuaciones"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/boton_i"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="119dp"
+        android:backgroundTint="#607d8d"
+        android:drawableLeft="@drawable/in"
+        android:drawablePadding="8dp"
+        android:text="Interpolación"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        app:srcCompat="@mipmap/iconsmall" />
+
+
+</RelativeLayout>
+

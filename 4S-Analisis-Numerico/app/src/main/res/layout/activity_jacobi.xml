@@ -8,7 +8,8 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondo6">
 
         <EditText
             android:id="@+id/nText"
@@ -31,6 +32,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginLeft="93dp"
             android:layout_marginTop="193dp"
+            android:background="@color/colorAccent3"
             android:onClick="onCreateClick"
             android:text="Crear"
             app:layout_constraintEnd_toEndOf="parent"
@@ -41,16 +43,15 @@
             android:id="@+id/bisText"
             android:layout_width="204dp"
             android:layout_height="57dp"
-            android:textSize="25dp"
-            android:textColor="@android:color/holo_blue_dark"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:text="@string/jacobi"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             android:layout_marginLeft="43dp"
             android:layout_marginTop="2dp"
-            tools:layout_editor_absoluteX="43dp" />
+            android:gravity="center"
+            android:text="@string/jacobi"
+            android:textColor="@android:color/background_dark"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/sendBtn"
@@ -58,7 +59,7 @@
             android:layout_height="40dp"
             android:layout_marginLeft="94dp"
             android:layout_marginTop="509dp"
-            android:background="@android:color/holo_blue_light"
+            android:background="@color/colorAccent3"
             android:onClick="onCalculateClick"
             android:text="Calcular"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -70,8 +71,8 @@
             android:layout_height="40dp"
             android:layout_marginLeft="260dp"
             android:layout_marginTop="2dp"
-            android:backgroundTint="@android:color/holo_blue_dark"
             android:background="@android:drawable/ic_menu_help"
+            android:backgroundTint="@android:color/holo_blue_dark"
             android:onClick="onHelpClick"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -228,6 +229,7 @@
                         android:id="@+id/textView3"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
+                        android:background="@color/colorAccent3"
                         android:gravity="left"
                         android:padding="5dp"
                         android:text="@string/n"

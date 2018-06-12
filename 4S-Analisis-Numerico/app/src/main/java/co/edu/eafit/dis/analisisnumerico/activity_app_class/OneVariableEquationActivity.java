@@ -23,7 +23,7 @@ public class OneVariableEquationActivity extends AppCompatActivity {
     private static ListView list_view;
     private static String[] METHODS = new String[] {
             "Busqueda Incremental", "Biseccion", "Regla Falsa",
-            "Fixed Point", "Newton", "Secante", "Raices Multiples",
+            "Punto Fijo", "Newton", "Secante", "Raices Multiples",
             "Graficador"
     };
 
@@ -58,7 +58,7 @@ public class OneVariableEquationActivity extends AppCompatActivity {
                                 intent = new Intent(OneVariableEquationActivity.this,FalseRuleActivity.class);
                                 startActivity(intent);
                                 break;
-                            case "Fixed Point":
+                            case "Punto Fijo":
                                 intent = new Intent(OneVariableEquationActivity.this,FixedPointActivity.class);
                                 startActivity(intent);
                                 break;

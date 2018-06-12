@@ -22,8 +22,8 @@ public class EquationSystemActivity extends AppCompatActivity {
     private static ListView list_view;
     private static String[] METHODS = new String[] {
             "Eliminacion Gaussiana", "LU Factorizacion Cholesky", "LU Factorizacion Doolittle",
-            "LU Factorizacion Crout", "Jacobi", "Jacobi Relaxed", "Gauss Seidel",
-            "Gauss Seidel Relaxed"
+            "LU Factorizacion Crout", "Jacobi", "Jacobi Relajado", "Gauss Seidel",
+            "Gauss Seidel Relajado"
     };
 
     @Override
@@ -64,7 +64,7 @@ public class EquationSystemActivity extends AppCompatActivity {
                                 intent = new Intent(EquationSystemActivity.this,JacobiActivity.class);
                                 startActivity(intent);
                                 break;
-                            case "Jacobi Relaxed":
+                            case "Jacobi Relajado":
                                 intent = new Intent(EquationSystemActivity.this,JacobiRelaxedActivity.class);
                                 startActivity(intent);
                                 break;
@@ -72,7 +72,7 @@ public class EquationSystemActivity extends AppCompatActivity {
                                 intent = new Intent(EquationSystemActivity.this,GaussSeidelActivity.class);
                                 startActivity(intent);
                                 break;
-                            case "Gauss Seidel Relaxed":
+                            case "Gauss Seidel Relajado":
                                 intent = new Intent(EquationSystemActivity.this,GaussSeidelRelaxedActivity.class);
                                 startActivity(intent);
                                 break;

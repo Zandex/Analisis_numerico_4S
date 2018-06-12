@@ -21,11 +21,11 @@ public class FalseRuleMethod {
         int n = 0;
         int contArray = 0;
         if (yi.compareTo(BigDecimal.ZERO) == 0) {
-            return xi.toString() + " is a root";
+            return xi.toString() + " Es la raiz";
         } else if (ys.compareTo(BigDecimal.ZERO) == 0) {
             return xs.toString() + " is root";
         } else if ((yi.multiply(ys)).compareTo(BigDecimal.ZERO) > 0) {
-            return "Error, There is no root in the interval";
+            return "Error, No hay una raiz en este intervalo";
         } else {
             tableArray.add(new ArrayList<String>());
             tableArray.get(contArray).add("" + n);
@@ -66,11 +66,11 @@ public class FalseRuleMethod {
                 count++;
             }
             if (ym.compareTo(BigDecimal.ZERO) == 0) {
-                return xm.toString() + " is a root";
+                return xm.toString() + " Es raiz";
             } else if (E.compareTo(tol) < 0) {
-                return xm.toString() + " is an approximate root, E < tolerance";
+                return xm.toString() + " Esta aproximado a la raiz, E < tolerancia";
             } else {
-                return "Failure, has exceeded the maximum number of iterations";
+                return "Falla, Ha Exedido el numero maximo de interaciones";
             }
         }
     }

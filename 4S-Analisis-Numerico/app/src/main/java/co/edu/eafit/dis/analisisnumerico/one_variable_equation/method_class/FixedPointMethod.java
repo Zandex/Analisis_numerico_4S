@@ -38,11 +38,11 @@ public class FixedPointMethod {
             contArray++;
         }
         if (y.compareTo(BigDecimal.ZERO) == 0) {
-            return x0.toString()+" is a root";
+            return x0.toString()+ " Es raiz";
         }else if (E.compareTo(tol) < 0){
-            return x0.toString()+" is an approximate root, error < tolerance";
+            return x0.toString()+" Esta aproximado a la raiz, E < tolerancia";
         }else{
-            return "Failure, has exceeded the maximum number of iterations";
+            return "Falla, Ha Exedido el numero maximo de interaciones";
         }
     }
 

@@ -19,7 +19,7 @@ public class IncrementalSearchMethod {
         int n=0;
         int contArray=0;
         if (y0.compareTo(BigDecimal.ZERO) == 0){
-            return x0.toString()+" is a root";
+            return x0.toString()+ " Es raiz";
         }else{
             BigDecimal x1 = x0.add(delta);
             BigDecimal y1 = ExpressionEvalUtil.functionEval(f,x1);
@@ -44,14 +44,13 @@ public class IncrementalSearchMethod {
                 tableArray.get(contArray).add(""+x1);
                 tableArray.get(contArray).add(""+y1);
                 count = count + 1;
-                System.out.println("Hola "+count);
             }
             if (y1.compareTo(BigDecimal.ZERO) == 0){
-                return x1.toString()+" is a root";
+                return x1.toString()+ " Es raiz";
             }else if ((y1.multiply(y0)).compareTo(BigDecimal.ZERO) < 0){
-                return x0.toString()+", "+ x1.toString()+" is an interval where a root exists";
+                return x0.toString()+", "+ x1.toString()+" Es un intervalod donde la raiz existe";
             }else{
-                return "Failure, has exceeded the maximum number of iterations";
+                return "Falla, Ha Exedido el numero maximo de interaciones";
             }
         }
     }

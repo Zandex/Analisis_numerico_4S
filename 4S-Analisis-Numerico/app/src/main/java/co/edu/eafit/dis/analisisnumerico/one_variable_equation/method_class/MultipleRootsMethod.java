@@ -52,15 +52,15 @@ public class MultipleRootsMethod {
             tableArray.get(contArray).add(""+E);
         }
         if (y.compareTo(BigDecimal.ZERO) == 0) {
-            return x0.toString()+" is a root";
+            return x0.toString()+" Es una raiz";
         }else if (dy.compareTo(BigDecimal.ZERO) == 0) {
-            return "First derivative equal to 0";
+            return "Primera derivada igual a 0";
         }else if (ddy.compareTo(BigDecimal.ZERO) == 0) {
-            return "Second derivative equal to 0";
+            return "Segunda derivada igual a 0";
         }else if (E.compareTo(tol) < 0){
-            return x0.toString()+" is an approximate root, error < tolerance";
+            return x0.toString()+" Esta proxima a una raiz, error < tolerancia";
         }else{
-            return "Failure, has exceeded the maximum number of iterations";
+            return "Falla, Ha Exedido el numero maximo de interaciones";
         }
     }
 }

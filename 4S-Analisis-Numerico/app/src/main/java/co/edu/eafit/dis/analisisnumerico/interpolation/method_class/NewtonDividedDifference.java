@@ -25,7 +25,7 @@ public class NewtonDividedDifference {
             p = 0;
             for(int i=k+1;i<n;i++){
                 if(mx[i].subtract(mx[0]).compareTo(BigDecimal.ZERO)==0){
-                    new Exception("Error, division by zero");
+                    new Exception("Error, division Por cero");
                 }
                 A[i][k+1]=(A[i][k].subtract(A[i-1][k])).divide(mx[i].subtract(mx[p]),32, RoundingMode.HALF_EVEN);
                 contArray = printViewData(A,n,contArray);

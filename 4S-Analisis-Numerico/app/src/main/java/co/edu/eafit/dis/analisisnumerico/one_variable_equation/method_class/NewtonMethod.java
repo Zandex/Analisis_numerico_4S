@@ -47,13 +47,13 @@ public class NewtonMethod {
             tableArray.get(contArray).add(""+E);
         }
         if (y.compareTo(BigDecimal.ZERO) == 0) {
-            return x0.toString()+" is a root";
+            return x0.toString()+" Es raiz";
         }else if (dy.compareTo(BigDecimal.ZERO) == 0){
-            return "Division by zero";
+            return "Division por cero";
         }else if (E.compareTo(tol) < 0){
-            return x0.toString()+" is an approximate root, error < tolerance";
+            return x0.toString()+" Esta proxima a una raiz, error < tolerancia";
         }else{
-            return "Failure, has exceeded the maximum number of iterations";
+            return "Falla, Ha Exedido el numero maximo de interaciones";
         }
     }
 

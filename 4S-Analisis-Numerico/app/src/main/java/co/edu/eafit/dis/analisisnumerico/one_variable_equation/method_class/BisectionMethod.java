@@ -26,7 +26,7 @@ public class BisectionMethod {
         }else if(ys.compareTo(BigDecimal.ZERO) == 0){
             return xs.toString();
         }else if ((yi.multiply(ys)).compareTo(BigDecimal.ZERO) > 0){
-            return "Error, There is no a root in the interval";
+            return "Error, En este intervalo no hay raiz";
         }else{
             tableArray.add(new ArrayList<String>());
             tableArray.get(contArray).add(""+n);
@@ -42,7 +42,6 @@ public class BisectionMethod {
             while((ym.compareTo(BigDecimal.ZERO) != 0) && (E.compareTo(tol)>0) && (count < iter)){
                 n++;
                 contArray++;
-                System.out.println("Por aqui pase");
                 tableArray.add(new ArrayList<String>());
                 tableArray.get(contArray).add(""+n);
                 if((ym.multiply(yi)).compareTo(BigDecimal.ZERO) < 0){
@@ -71,9 +70,9 @@ public class BisectionMethod {
             if(ym.compareTo(BigDecimal.ZERO) == 0){
                 return xm.toString();
             }else if(E.compareTo(tol) < 0){
-                return xm.toString() + " is an approximate root, E < tolerance";
+                return xm.toString() + " Es aproximado a la raiz, E < tolerancia";
             }else{
-                return "Failure, has exceeded the maximum number of iterations";
+                return "Falla, Ha fallado el numero maximo de interaciones";
             }
         }
     }

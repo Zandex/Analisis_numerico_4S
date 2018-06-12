@@ -54,18 +54,18 @@ public class SecantMethod {
                 tableArray.get(contArray).add(""+E);
             }
             if (y1.compareTo(BigDecimal.ZERO) == 0) {
-                return x0.toString()+" is a root";
+                return x0.toString()+" Es raiz";
             } else if (y2.compareTo(BigDecimal.ZERO) == 0) {
-                return x1.toString()+" is a root";
+                return x1.toString()+" Es raiz";
             } else if (E.compareTo(tol) < 0) {
-                return x1.toString()+" is an approximate root, error < tolerance";
+                return x1.toString()+" Esta proxima a una raiz, error < tolerancia";
             } else if (div.compareTo(BigDecimal.ZERO) == 0) {
-                return "Division by zero";
+                return "Division por cero";
             } else {
-                return "Failure, has exceeded the maximum number of iterations";
+                return "Falla, Ha Exedido el numero maximo de interaciones";
             }
         }else {
-            return x0.toString()+" is a root";
+            return x0.toString()+" Es raiz";
         }
     }
 }

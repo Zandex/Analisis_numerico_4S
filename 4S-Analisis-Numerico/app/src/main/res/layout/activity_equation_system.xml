@@ -17,22 +17,10 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16"
+        app:layout_constraintVertical_bias="0.135"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1" />
 
-
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="256dp"
-        android:layout_height="353dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.689" />
 
     <TextView
         android:id="@+id/textView34"
@@ -55,9 +43,95 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:srcCompat="@mipmap/systema_de_ecuaciones"
-        tools:layout_editor_absoluteY="65dp" />
+        tools:layout_editor_absoluteY="46dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="99dp"
+        android:layout_height="353dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminacion Gaussiana"
+        android:onClick="button_gauss"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="111dp" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LU Factorizacion Cholesky"
+        android:onClick="button_chole"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LU Factorizacion Doolittle"
+        android:onClick="button_dooli"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LU Factorizacion Crout"
+        android:onClick="button_crou"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jacobi"
+        android:onClick="button_jacobi"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="303dp" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jacobi Relajado"
+        android:onClick="button_jacorel"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gauss Seidel"
+        android:onClick="button_gausse"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gauss Seidel Relajad"
+        android:onClick="button_gauserelx"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="447dp" />
 
 
 </android.support.constraint.ConstraintLayout>

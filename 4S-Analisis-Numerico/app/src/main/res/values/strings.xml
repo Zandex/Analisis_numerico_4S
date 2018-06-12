@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">4´S Análisis Numérico</string>
     <string name="selec_option">Menu</string>
 
@@ -64,91 +64,91 @@
 
 
     <string name="bisectionHelp">Bisection method (Help)\n
-        It is important to know, the method assumes the existence of an interval with a root,
-        if a root doesn’t exist in the interval, the method will return error.
-        The data the algorithm asks to enter is an Interval [xi, xs], a maximum number of
-        iterations, a tolerance (How close will be the number to the real root) and the
-        function F who will be evaluated.
-        What the Bisection method does is divides an interval in two, using xn=(xi+xs)/2,
-        and evaluates this expression f(x1)*f(xn), xn being the middle number, If the
-        multiplication is less than zero so, the new xs is xn, else, the new xs is xi.
-        This process continues until it finds a root, the error is less than the tolerance
-        or failure, the maximum number of iterations has been reached or there are no
-        roots in the interval.
-        The convergence of this method is slow, but it will always theorically converge.\n
-        WARNING: The method won’t accept iterations under 1 and the tolerance must be higher than 0.
+        Es importante saber, el método supone la existencia de un intervalo con una raíz,
+        si una raíz no existe en el intervalo, el método devolverá el error.
+        Los datos que el algoritmo solicita ingresar son un Intervalo [xi, xs], un número máximo de
+        iteraciones, una tolerancia (qué tan cerca estará el número de la raíz real) y el
+        función F que será evaluada.
+        Lo que hace el método Bisection es dividir un intervalo en dos, utilizando xn = (xi + xs) / 2,
+        y evalúa esta expresión f (x1) * f (xn), siendo xn el número del medio, si el
+        la multiplicación es menor que cero, entonces, la nueva x es xn; de lo contrario, la nueva x es xi.
+        Este proceso continúa hasta que encuentra una raíz, el error es menor que la tolerancia
+        o falla, se ha alcanzado el número máximo de iteraciones o no hay
+        raíces en el intervalo.
+        La convergencia de este método es lenta, pero siempre convergerá teóricamente. \ N
+        ADVERTENCIA: El método no aceptará iteraciones por debajo de 1 y la tolerancia debe ser mayor que 0.
     </string>
 
     <string name="falseRuleHelp">False Rule (Help)\n
-        It is important to know, the method assumes the existence of an interval with a root,
-        if a root doesn’t exist in the interval, the method will return error.
-        The data the algorithm asks to enter is an Interval [xi, xs] or [a, b], a maximum
-        number of iterations, a tolerance (How close will be the number to the real root)
-        and the function F who will be evaluated.
-        What the False rule method does is divides an interval in two,
-        using xn=(aF(b)-bF(a))/(F(b)-F(a)) and evaluates the expression f(x1)*f(xn),
-        If the multiplication is less than zero so, the new xs is xn, else, the new xs
-        is xi. This process continues until it finds a root, the error is less than
-        the tolerance or failure, the maximum number of iterations has been reached
-        or there are no roots in the interval.
-        The convergence of this method is slow, but it will always theorically converge.\n
-        WARNING: The method won’t accept iterations under 1 and the tolerance must be higher than 0.
+        Es importante saber, el método supone la existencia de un intervalo con una raíz,
+        si una raíz no existe en el intervalo, el método devolverá el error.
+        Los datos que el algoritmo solicita ingresar son un Intervalo [xi, xs] o [a, b], un máximo
+        número de iteraciones, una tolerancia (qué tan cerca estará el número de la raíz real)
+        y la función F que será evaluada.
+        Lo que hace el método de regla False es dividir un intervalo en dos,
+        usando xn = (aF (b) -bF (a)) / (F (b) -F (a)) y evalúa la expresión f (x1) * f (xn),
+        Si la multiplicación es menor que cero entonces, el nuevo xs es xn; de lo contrario, el nuevo xs
+        es xi. Este proceso continúa hasta que encuentra una raíz, el error es menor que
+        la tolerancia o falla, se ha alcanzado el número máximo de iteraciones
+        o no hay raíces en el intervalo.
+        La convergencia de este método es lenta, pero siempre convergerá teóricamente. \ N
+        ADVERTENCIA: El método no aceptará iteraciones por debajo de 1 y la tolerancia debe ser mayor que 0.
     </string>
 
     <string name="incrementalSearchHelp">
-        Incremental Search (Help)\n
-        The prompt of this method is a x0, x1, iterations and a function f.
-        This method assumes that the function f is continuous and allows us to find an
-        interval with a root, by means of the interactive evaluation of f0*f1, where
-        f0 = F(x0) and f1 = F(x1). If the multiplication is less than 0 so the method
-        finds a root, but x0 and x1 can also be a root.
-        The method ends when it finds a root or completes the max number of iterations,
-        which is a failure, if f is not continuous, the expression evaluator will send
-        an error if somehow it finds an Asymptote.\n
-        WARNING: The method won’t accept iterations under 1 and null deltas.
+        Búsqueda adicional (Ayuda) \ n
+         El mensaje de este método es x0, x1, iteraciones y una función f.
+         Este método supone que la función f es continua y nos permite encontrar un
+         intervalo con una raíz, mediante la evaluación interactiva de f0 * f1, donde
+         f0 = F (x0) y f1 = F (x1). Si la multiplicación es menor que 0, entonces el método
+         encuentra una raíz, pero x0 y x1 también pueden ser una raíz.
+         El método finaliza cuando encuentra una raíz o completa el número máximo de iteraciones,
+         que es un error, si f no es continuo, el evaluador de expresiones enviará
+         un error si de alguna manera encuentra una asíntota. \ n
+         ADVERTENCIA: El método no aceptará iteraciones en 1 y deltas nulos.
     </string>
 
     <string name="fixedPointHelp">
-        Fixed Point Method (Help)\n
-        Also, known as an open method, open methods are called like that because they
-        do not need a specific interval, but with one number they can start the process.
-        This method will prompt a x, number of iterations, a tolerance, a
-        function f and a function g.
-        This method redefines the original equation f(x)=0 and generates a new equation
-        g(x), that allows to find a new value x where x=g(x) and f(x) coincide with zero.
-        It’s important to notice that g(x) is just a variation of f(x), and there’s
-        good and bad g(x) functions that are determined by these 3 conditions:
-            1.	X is part of [a,b] and g is also a part of [a,b]
-            2.	g is continuous in [a,b]
-            3.	|g’(x)| less-equal k less 1
-        If these conditions meet, the method will theorically converge on a root,
-        and it’s speed of convergence will depend on both f(x) and g(x).\n
-        WARNING: The method won’t accept iterations under 1 and the tolerance must be higher than 0.
+        Método de punto fijo (Ayuda) \ n
+        Además, conocido como un método abierto, los métodos abiertos se llaman así porque
+        no necesitan un intervalo específico, pero con un número pueden comenzar el proceso.
+        Este método generará x, número de iteraciones, tolerancia,
+        función f y una función g.
+        Este método redefine la ecuación original f (x) = 0 y genera una nueva ecuación
+        g (x), que permite encontrar un nuevo valor x donde x = g (x) yf (x) coinciden con cero.
+        Es importante notar que g (x) es solo una variación de f (x), y hay
+        buenas y malas funciones g (x) que están determinadas por estas 3 condiciones:
+            1. X es parte de [a, b] yg también es parte de [a, b]
+            2. g es continuo en [a, b]
+            3. | g '(x) | menos igual k menos 1
+        Si estas condiciones se encuentran, el método convergerá teóricamente en una raíz,
+        y su velocidad de convergencia dependerá tanto de f (x) como de g (x). \ n
+        ADVERTENCIA: El método no aceptará iteraciones por debajo de 1 y la tolerancia debe ser mayor que 0.
     </string>
 
-    <string name="newtonHelp">
-        Newton Method\n
-        This method is a variant of fixed point method, so the way the algorithm
-        works is similar, the difference is between them is that g(x) is calculated
-        based on this formula g(x) = [x – (f(x) / f ’(x))].
-        This method is excellent when it’s easy to know the first derivate
-        of the function, because it converges on a much faster rate than the Fixed Point method.
-        To get a better understanding of the way the method works, please see the Fixed Point help.\n
-        WARNING: The method won’t accept iterations under 1 and the tolerance must be higher than 0.
+    <string name="newtonHelp" >
+        Método Newton \ n
+         Este método es una variante del método de punto fijo, por lo que la forma en que el algoritmo
+         el trabajo es similar, la diferencia entre ellos es que g (x) se calcula
+         basado en esta fórmula g (x) = [x - (f (x) / f \'(x))].
+        Este método es excelente cuando es fácil conocer el primer derivado
+         de la función, porque converge a una velocidad mucho más rápida que el método del punto fijo.
+         Para obtener una mejor comprensión de la forma en que funciona el método, consulte la ayuda de Punto fijo. \ N
+         ADVERTENCIA: El método no aceptará iteraciones por debajo de 1 y la tolerancia debe ser mayor que 0.
     </string>
 
-    <string name="secantHelp">
-        Secant Method\n
-        This method is a variant of the fixed point method, so the way it works is similar,
-        the secant method uses two initial values x0 and x1 to create a new value x2
-        with the following equation x|i+1|=x|i| * (f(x|i|)*(x|1|-x|i-1|)/(f(x|i|)*(f(x|i-1|)))
-        In addition, the method deletes x0 and continues creating a new value
-        with x1 and x2, this process is repeated until it finishes by success or by failure.
-        This method is the most used nowadays for the easiness of it’s implementation
-        and because it’s convergence it’s almost as fast as the Newton method
-        without calculating a derivate.
-        To get a better understanding of the way the method works, please see the Fixed Point help.\n
-        WARNING: The method won’t accept iterations under 1 and the tolerance must be higher than 0.
+    <string name="secantHelp" >
+        Método de raíces múltiples \ n
+         Este método es una variante de los métodos de punto fijo y Newton,
+         las raíces múltiples hacen el mismo procedimiento que el método de Newton,
+         pero el método calcula la raíz con esta ecuación \ n
+         g (x) = x- (f (x) * f \'(x) / ((f\' (x)) ^ 2-f (x) * f \'\' (x))) \ n
+         Este método es excelente cuando es fácil conocer la primera y la segunda derivada
+         de la función, porque converge a un ritmo mucho más rápido que
+         Métodos de punto fijo y Newton.
+         Para obtener una mejor comprensión de la forma en que funciona el método, consulte
+         la ayuda del Punto fijo. \ n
+         ADVERTENCIA: El método no aceptará iteraciones por debajo de 1 y la tolerancia debe ser mayor que 0.
     </string>
 
     <string name="multipleRootsHelp">
@@ -166,82 +166,82 @@
     </string>
 
     <string name="gaussianEliminationHelp">
-        This method has two processes, the first is to perform transformations
-        on the equation system using elementary operations (multipliers) to obtain
-        an equivalent system of equations whose coefficient matrix is upper triangular,
-        and the second is a substitution of these values to obtain the n number of
-        results of the variables of the system. Gaussian Elimination uses Regressive Substitution
-        This method will prompt you for an A and a n, being A the matrix to be iterated
-        and n being the order of the square matrix.\n
-        WARNING: The method won’t accept orders under 2, and incase it’s 1 it will return the same
-        number.
+        Este método tiene dos procesos, el primero es realizar transformaciones
+         en el sistema de ecuaciones usando operaciones elementales (multiplicadores) para obtener
+         un sistema equivalente de ecuaciones cuya matriz de coeficientes es triangular superior,
+         y el segundo es una sustitución de estos valores para obtener el n número de
+         resultados de las variables del sistema. Eliminación gaussiana usa sustitución regresiva
+         Este método le solicitará una A y una n, siendo A la matriz que se repetirá
+         y n es el orden de la matriz cuadrada. \ n
+         ADVERTENCIA: El método no aceptará pedidos menores a 2, y en caso de que sea 1, devolverá el mismo
+         número.
     </string>
 
     <string name="LUFactorizationGeneralHelp">
-        The LU factorizations are used to solve a system of equations Ax = b
-        using a permutation of the A matrix to decompose it into two matrixes L and U.
-        Depending of the method, the diagonal of the matrix L or U will change,
-        Cholesky will have the diagonal of L and U the same, Crout will have all
-        the diagonal of U being 1 and Doolittle will have the diagonal of L being 1.
-        After getting L and U, they both can be used with progressive or regressive
-        substitution to get the result of an equation system.
-        These methods will prompt a matrix A to be decomposed and the order of the square matrix n.\n
-        WARNING: These methods won’t accept orders under 2, and incase it’s 1 they will return the
-        same number.
+        Las factorizaciones LU se utilizan para resolver un sistema de ecuaciones Ax = b
+         usando una permutación de la matriz A para descomponerla en dos matrices L y U.
+         Dependiendo del método, la diagonal de la matriz L o U cambiará,
+         Cholesky tendrá la diagonal de L y U igual, Crout tendrá todo
+         la diagonal de U es 1 y Doolittle tendrá la diagonal de L es 1.
+         Después de obtener L y U, ambos se pueden usar con progresivo o regresivo
+         sustitución para obtener el resultado de un sistema de ecuaciones.
+         Estos métodos provocarán que se descomponga una matriz A y el orden de la matriz cuadrada n. \ N
+         ADVERTENCIA: estos métodos no aceptarán pedidos menores de 2, y en caso de que sea 1, devolverán el
+         mismo número.
     </string>
 
     <string name="jacobiHelp">
-        This method is used to find the roots in an equation system using the same algorithmia as
-        the fixed point method.
-        This method structure is like the fixed point method, it prompts for an
-        initial value for each variable of the equation system and then it iterates.
-        This method has cases when it doesn’t converge. The norm for stopping the method is the
-        Euclidean.
-        For better understanding, please see fixed point help.\n
-        WARNING: The method won’t accept orders under 2, and incase it’s 1 it will return the same
-        number.
+        Este método se usa para encontrar las raíces en un sistema de ecuaciones usando la misma algoritmia que
+         el método de punto fijo.
+         Esta estructura de método es como el método de punto fijo, solicita una
+         valor inicial para cada variable del sistema de ecuaciones y luego itera.
+         Este método tiene casos en los que no converge. La norma para detener el método es la
+         Euclidiano.
+         Para una mejor comprensión, consulte la ayuda de punto fijo. \ N
+         ADVERTENCIA: El método no aceptará pedidos menores a 2, y en caso de que sea 1, devolverá el mismo
+         número.
     </string>
 
     <string name="gaussSeidelHelp">
-        This method structure is a variant of the Jacobi Method, it prompts for an
-        initial value for each variable and then it iterates but it doesn’t always
-        converge, the difference between Jacobi and this one is the new values of
-        the matrix are used immediately instead of every outer cycle iteration.
-        The norm for stopping the method is the Euclidean.
-        For better understanding, please see fixed point help and Jacobi help.\n
-        WARNING: The method won’t accept orders under 2, and incase it’s 1 it will return the same
-        number.
+        Esta estructura de método es una variante del método de Jacobi, solicita una
+         valor inicial para cada variable y luego itera, pero no siempre
+         convergen, la diferencia entre Jacobi y este es los nuevos valores de
+         la matriz se usa inmediatamente en lugar de cada iteración de ciclo externo.
+         La norma para detener el método es el euclidiano.
+         Para una mejor comprensión, consulte la ayuda de punto fijo y la ayuda de Jacobi. \ N
+         ADVERTENCIA: El método no aceptará pedidos menores a 2, y en caso de que sea 1, devolverá el mismo
+         número.
     </string>
 
     <string name="relaxedGeneralHelp">
-        The relaxation method is based on improving the convergence of Jacobi and
-        Gauss Seidel methods using an altered form of calculating the new values using a lambda.
-        It prompts for a value (lambda) and it can make the method converge faster,
-        slower or not converge at all.
+        El método de relajación se basa en mejorar la convergencia de Jacobi y
+         Métodos de Gauss Seidel utilizando una forma alterada de cálculo de los nuevos valores utilizando una lambda.
+         Solicita un valor (lambda) y puede hacer que el método converja más rápido,
+         más lento o no convergen en absoluto.
     </string>
 
     <string name="pivotHelp">
-        Note: first you need to create and fill a matrix\n
-        Partial Pivoting\n
-        With this method the idea is to find the largest among |aik| with k less equal
-        i less equal n, and the exchange is made to locate the highest chosen in row k,
-        in other words, the method will find the highest number in every column and then exchanges
-        row in order to put those highest numbers in the diagonal.\n
-        Scale Pivoting\n
-        At the beginning, a scale factor must be computed for each equation in the system.
-        These n numbers are recorded in the scale vector s. In starting the forward elimination
-        process, we do not arbitrarily use the first equation as the pivot equation. Instead,
-        we use the equation for which the ratio |ai,1|/si is greatest. Let aux1 be the first
-        index for which this ratio is greatest. Now appropriate multiples of equation aux1
-        are subtracted from the other equations to create 0’s as coefficients for each x1
-        except in the pivot equation.\n
-        Total Pivoting\n
-        This method is based on at each step k , the major element in absolute value will
-        be searched between the submatrix elements that result from deleting the row f1 to
-        f (k-1) and the columns c1 to c (k-1) in the A matrix, regardless of the independent
-        terms. Once detected, the greatest of these elements the rows and columns positions
-        will be replaced for placement in Akk. When performing column exchange it must be
-        considered that it alters the order of the variables in the system.
+        Nota: primero necesita crear y llenar una matriz \ n
+        Giro parcial \ n
+        Con este método, la idea es encontrar el más grande entre | aik | con k menos igual
+        i menos igual a n, y el intercambio se hace para ubicar el más alto elegido en la fila k,
+        en otras palabras, el método encontrará el número más alto en cada columna y luego intercambiará
+        fila para poner esos números más altos en la diagonal. \ n
+        Escalado de pivote \ n
+        Al principio, se debe calcular un factor de escala para cada ecuación en el sistema.
+        Estos n números se registran en el vector de escala s. Al comenzar la eliminación hacia adelante
+        proceso, no usamos arbitrariamente la primera ecuación como la ecuación de pivote. En lugar,
+        usamos la ecuación para la cual la relación | ai, 1 | / si es la más grande. Deje que aux1 sea el primero
+        índice para el cual esta relación es mayor. Ahora múltiplos apropiados de la ecuación aux1
+        se restan de las otras ecuaciones para crear 0's como coeficientes para cada x1
+        excepto en la ecuación de pivote. \ n
+        Pivotar total \ n
+        Este método se basa en cada paso k, el elemento principal en valor absoluto
+        se buscará entre los elementos de submatriz que resultan de eliminar la fila f1 a
+        f (k-1) y las columnas c1 a c (k-1) en la matriz A, independientemente de la independencia
+        condiciones. Una vez detectado, el mayor de estos elementos, las posiciones de filas y columnas
+        será reemplazado para colocarlo en Akk. Al realizar el intercambio de columna debe ser
+        considera que altera el orden de las variables en el sistema.
     </string>
 
     <string name="newton_Divided">Newton Divided Differences</string>
@@ -253,73 +253,73 @@
 
 
     <string name="newton_Divided_Help">Newton Divided Differences (Help)\n
-        The idea of this method is the construction of one polynomial that passes
-        right through or near the given points following the formula of p(x) = b0
-        (x-x0) + b1 (x-x0) (x-x1) + b2 (x-x0) (x-x1) (x-x2) … + bn (x-x0) … (x-xn).
-        The method will prompt two vectors: x and f(x), the size of the two vectors (n),
-        and a number y that will be the evaluated number in the polynomial result,
-        in other words, f(y). Using x and f(x), the method will find the diagonal
-        of the A matrix recursively using the formula A[i,k+1]=(A[i,k]-A[p,k])/(X[i]-X[p]),
-        the meaning of the diagonal is the coefficients b used for the polynomial.\n
-        WARNING: This method won’t accept null or negative sizes.
+        La idea de este método es la construcción de un polinomio que pasa
+         justo a través o cerca de los puntos dados siguiendo la fórmula de p (x) = b0
+         (x-x0) + b1 (x-x0) (x-x1) + b2 (x-x0) (x-x1) (x-x2) ... + bn (x-x0) ... (x-xn).
+         El método generará dos vectores: x y f (x), el tamaño de los dos vectores (n),
+         y un número y que será el número evaluado en el resultado del polinomio,
+         en otras palabras, f (y). Usando x y f (x), el método encontrará la diagonal
+         de la matriz A usando recursivamente la fórmula A [i, k + 1] = (A [i, k] -A [p, k]) / (X [i] -X [p]),
+         el significado de la diagonal son los coeficientes b usados para el polinomio. \ n
+         ADVERTENCIA: este método no aceptará tamaños nulos o negativos.
     </string>
 
     <string name="lagrange_Help">Lagrange (Help)\n
-        The idea of this method is the construction of one polynomial that passes
-        right through or near the given points following the formula
-        of p(x) = L0f(x0) + L1f(x1) + L2f(x2) … + Lnf(xn).
-        The method will prompt a vector x, a function f, the size of the vector (n),
-        and a number y that will be the evaluated number in the polynomial result,
-        in other words, f(y). Using x and f, the method will find the coefficients
-        L used for the polynomial using the
-        formula Ln(x)= (x-x1) … (x-xn) / (xn – x1) … (xn – xn-1).\n
-        WARNING: This method won’t accept null or negative sizes.
+        La idea de este método es la construcción de un polinomio que pasa
+         a través o cerca de los puntos dados siguiendo la fórmula
+         de p (x) = L0f (x0) + L1f (x1) + L2f (x2) ... + Lnf (xn).
+         El método generará un vector x, una función f, el tamaño del vector (n),
+         y un número y que será el número evaluado en el resultado del polinomio,
+         en otras palabras, f (y). Usando x y f, el método encontrará los coeficientes
+         L utilizado para el polinomio utilizando el
+         fórmula Ln (x) = (x-x1) ... (x-xn) / (xn - x1) ... (xn - xn-1). \ n
+         ADVERTENCIA: este método no aceptará tamaños nulos o negativos.
     </string>
 
     <string name="neville_Help">Neville (Help)\n
-        This method is a variant of the Newton Polynomial method, it’s useful
-        because it can add numbers to the matrix A both left and right side recursively.
-        The method will prompt two vectors: x and f(x), the size of the two vectors (n),
-        and a number y that will be the evaluated number in the polynomial result,
-        in other words, f(y) using the formula:
-        Pi,i(x) = yi;
-        Pi,j(x) = ((xj – x) * pi,j-1(x) + (x – xi)*pi+1,j(x)) / xj -xi
-        To get a better understanding of the method, please see the Newton’s Polynomial Help.\n
-        WARNING: This method won’t accept null or negative sizes.
+        Este método es una variante del método del Polinomio de Newton, es útil
+         porque puede agregar números a la matriz A tanto a la izquierda como a la derecha recursivamente.
+         El método generará dos vectores: x y f (x), el tamaño de los dos vectores (n),
+         y un número y que será el número evaluado en el resultado del polinomio,
+         en otras palabras, f (y) usando la fórmula:
+         Pi, i (x) = yi;
+         Pi, j (x) = ((xj - x) * pi, j-1 (x) + (x - xi) * pi + 1, j (x)) / xj -xi
+         Para obtener una mejor comprensión del método, consulte la Ayuda del Polinomio de Newton. \ N
+         ADVERTENCIA: este método no aceptará tamaños nulos o negativos.
     </string>
 
     <string name="linear_Help">Linear Spline (Help)\n
-        Linear spline is used to simulate a function f, f will be a set of lines that
-        pass through the given points.\n
-        This method will prompt two vectors: f and x, the size of the
-        vectors (n) and a number to be evaluated y.\n
-        WARNING: This method won’t accept null or negative sizes.
+        Lineal spline se utiliza para simular una función f, f será un conjunto de líneas que
+         pasar por los puntos dados. \ n
+         Este método generará dos vectores: f y x, el tamaño del
+         vectores (n) y un número a evaluar y. \ n
+         ADVERTENCIA: este método no aceptará tamaños nulos o negativos.
     </string>
 
     <string name="quadratic_Help">Quadratic Spline (Help)\n
-        Linear spline is used to simulate a function f, f will be a set of parabolas
-        that pass through the given points, the exception is the first
-        function (x0,x1) being a line.\n
-        This method will prompt two vectors: f and x, the size of the
-        vectors (n) and a number to be evaluated y.\n
-        WARNING: This method won’t accept null or negative sizes.
+        Lineal spline se usa para simular una función f, f será un conjunto de parábolas
+         que pasan por los puntos dados, la excepción es la primera
+         función (x0, x1) siendo una línea. \ n
+         Este método generará dos vectores: f y x, el tamaño del
+         vectores (n) y un número a evaluar y. \ n
+         ADVERTENCIA: este método no aceptará tamaños nulos o negativos.
     </string>
 
     <string name="cubic_Help">Cubic Spline (Help)\n
-        Linear spline is used to simulate a function f, f will be a set of curves
-        that pass through the given points.\n
-        This method will prompt two vectors: f and x, the size of the
-        vectors (n) and a number to be evaluated y.\n
-        WARNING: This method won’t accept null or negative sizes.
+        Lineal spline se utiliza para simular una función f, f será un conjunto de curvas
+         que pasan por los puntos dados. \ n
+         Este método generará dos vectores: f y x, el tamaño del
+         vectores (n) y un número a evaluar y. \ n
+         ADVERTENCIA: este método no aceptará tamaños nulos o negativos.
     </string>
 
     <string name="ExceptionE">
-        Error, please check the data, if the problem continues maybe this method
-        cannot operate correctly with the data provided.
+        Error, compruebe los datos, si el problema continúa tal vez este método
+         no puede funcionar correctamente con los datos proporcionados.
     </string>
 
     <string name="ExceptionL">
-        Error loading data.
+        Error al Cargar la informacion.
     </string>
     <!-- spline -->
     <string name="f_vector">Vector f</string>

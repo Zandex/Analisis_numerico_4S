@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo7"
     tools:context="co.edu.eafit.dis.analisisnumerico.one_variable_equation.activity_class.IncrementalSearchActivity">
 
     <android.support.constraint.ConstraintLayout
@@ -78,12 +79,13 @@
             android:layout_marginEnd="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="196dp"
-            android:background="@android:color/holo_blue_light"
+            android:backgroundTint="#9fa8da"
             android:onClick="onCalculateClick"
             android:text="Calcular"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/white"/>
 
         <EditText
             android:id="@+id/resultText"
@@ -127,7 +129,7 @@
                     android:id="@+id/tableRow1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/holo_blue_light">
+                    android:background="@color/colorAccent2">
 
                     <TextView
                         android:id="@+id/textView3"
@@ -137,7 +139,8 @@
                         android:padding="5dp"
                         android:text="@string/n"
                         android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
 
                     <TextView
                         android:id="@+id/textVie3"
@@ -147,7 +150,8 @@
                         android:padding="5dp"
                         android:text="@string/x0T"
                         android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
 
                     <TextView
                         android:id="@+id/textVi3"
@@ -157,7 +161,8 @@
                         android:padding="5dp"
                         android:text="@string/y0T"
                         android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
 
 
                     <TextView
@@ -168,7 +173,8 @@
                         android:padding="5dp"
                         android:text="@string/x1T"
                         android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
 
                     <TextView
                         android:id="@+id/textView5"
@@ -178,7 +184,8 @@
                         android:padding="5dp"
                         android:text="@string/y1T"
                         android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
 
                 </TableRow>
 
@@ -188,26 +195,28 @@
 
         <Button
             android:id="@+id/helpBtn"
-            android:layout_width="49dp"
+            android:layout_width="41dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="260dp"
-            android:layout_marginTop="2dp"
-            android:backgroundTint="@android:color/holo_blue_dark"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
             android:background="@android:drawable/ic_menu_help"
+            android:backgroundTint="@android:color/holo_blue_dark"
             android:onClick="onHelpClick"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.971"
+            app:layout_constraintStart_toEndOf="@+id/incText"
+            tools:layout_editor_absoluteY="2dp" />
 
         <TextView
             android:id="@+id/incText"
-            android:layout_width="204dp"
-            android:layout_height="36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="2dp"
             android:gravity="center"
             android:text="@string/incremental_search"
             android:textColor="@android:color/holo_blue_dark"
-            android:textSize="20dp"
+            android:textSize="25dp"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

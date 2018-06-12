@@ -4,33 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo8"
     tools:context="co.edu.eafit.dis.analisisnumerico.activity_app_class.InterpolationActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Seleccione una Opcion"
-        android:textSize="19sp"
+        android:text="Seleccione un Método"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.232"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.197"
+        app:layout_constraintVertical_bias="0.234"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1" />
-
-
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="127dp"
-        android:layout_height="310dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.621" />
 
     <TextView
         android:id="@+id/textView35"
@@ -38,79 +27,106 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
-        android:text="Interpolacion"
-        android:textSize="30sp"
+        android:layout_marginTop="44dp"
+        android:background="@color/colorAccent4"
+        android:padding="5dp"
+        android:text="Interpolación"
+        android:textColor="#ffff"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.159"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="125dp"
-        android:layout_height="99dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="26dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/interpolacion" />
-
     <Button
         android:id="@+id/button13"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Newton Divided Differences"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#c5e1a5"
+        android:drawableLeft="@drawable/bus_in"
         android:onClick="button_newton"
-        tools:layout_editor_absoluteX="264dp"
-        tools:layout_editor_absoluteY="135dp" />
+        android:text="Newton Divided Differences"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/button14"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#c5e1a5"
+        android:drawableLeft="@drawable/bus_in"
         android:text="Lagrange"
         android:onClick="button_lagran"
-        tools:layout_editor_absoluteX="256dp"
-        tools:layout_editor_absoluteY="194dp" />
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button13" />
 
     <Button
         android:id="@+id/button15"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#c5e1a5"
+        android:drawableLeft="@drawable/bus_in"
         android:text="Neville"
         android:onClick="button_nevil"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="260dp" />
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button14" />
 
     <Button
         android:id="@+id/button16"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#c5e1a5"
+        android:drawableLeft="@drawable/bus_in"
         android:text="Spline Lineal"
         android:onClick="button_spliline"
-        tools:layout_editor_absoluteX="264dp"
-        tools:layout_editor_absoluteY="318dp" />
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button15"/>
 
     <Button
         android:id="@+id/button17"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#c5e1a5"
+        android:drawableLeft="@drawable/bus_in"
         android:text="Spline Cuadratico"
         android:onClick="button_splicuadr"
-        tools:layout_editor_absoluteX="264dp"
-        tools:layout_editor_absoluteY="376dp" />
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button16" />
 
     <Button
         android:id="@+id/button18"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#c5e1a5"
+        android:drawableLeft="@drawable/bus_in"
         android:text="Spline Cubico"
         android:onClick="button_splicubi"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="435dp" />
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button17"/>
 
 
 </android.support.constraint.ConstraintLayout>

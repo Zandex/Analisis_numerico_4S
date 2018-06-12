@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo7"
     tools:context="co.edu.eafit.dis.analisisnumerico.one_variable_equation.activity_class.BisectionActivity">
 
     <android.support.constraint.ConstraintLayout
@@ -110,11 +111,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="35dp"
             android:layout_marginTop="17dp"
-            android:background="@android:color/holo_blue_light"
+            android:backgroundTint="#9fa8da"
             android:onClick="onCalculateClick"
             android:text="Calcular"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            android:textColor="@android:color/white"/>
 
         <EditText
             android:id="@+id/resultText"
@@ -157,7 +159,7 @@
                     android:id="@+id/tableRow1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/holo_blue_light">
+                    android:background="@color/colorAccent2">
 
                     <TextView
                         android:id="@+id/textView3"
@@ -167,7 +169,8 @@
                         android:padding="5dp"
                         android:text="@string/n"
                         android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
 
                     <TextView
                         android:id="@+id/textVie3"
@@ -177,7 +180,8 @@
                         android:padding="5dp"
                         android:text="@string/xiT"
                         android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
 
                     <TextView
                         android:id="@+id/textVi3"
@@ -187,7 +191,8 @@
                         android:padding="5dp"
                         android:text="@string/xsT"
                         android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
 
 
                     <TextView
@@ -198,7 +203,8 @@
                         android:padding="5dp"
                         android:text="@string/xm"
                         android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
 
                     <TextView
                         android:id="@+id/textView5"
@@ -208,7 +214,8 @@
                         android:padding="5dp"
                         android:text="@string/ym"
                         android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
 
                     <TextView
                         android:id="@+id/textView6"
@@ -218,7 +225,8 @@
                         android:padding="5dp"
                         android:text="@string/error"
                         android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
 
                 </TableRow>
 
@@ -228,15 +236,17 @@
 
         <Button
             android:id="@+id/helpBtn"
-            android:layout_width="49dp"
+            android:layout_width="41dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="276dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
             android:background="@android:drawable/ic_menu_help"
             android:backgroundTint="@android:color/holo_blue_dark"
             android:onClick="onHelpClick"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.925"
+            app:layout_constraintStart_toEndOf="@+id/bisText"
+            tools:layout_editor_absoluteY="16dp" />
 
         <TextView
             android:id="@+id/bisText"
@@ -245,7 +255,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:gravity="center"
-            android:text="Biseccion"
+            android:text="Bisección"
             android:textColor="@android:color/holo_blue_dark"
             android:textSize="36sp"
             android:textStyle="bold"
@@ -260,6 +270,7 @@
             android:layout_marginTop="32dp"
             android:allowUndo="false"
             android:text="f(x)="
+            android:textStyle="bold"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bisText" />
@@ -271,6 +282,7 @@
             android:layout_marginStart="35dp"
             android:layout_marginTop="20dp"
             android:text="# de Interaciones:"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/exprText" />
 
@@ -281,6 +293,7 @@
             android:layout_marginStart="88dp"
             android:layout_marginTop="17dp"
             android:text="Tolerancia:"
+            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/textView15"
             app:layout_constraintTop_toBottomOf="@+id/exprText" />
 
@@ -291,6 +304,7 @@
             android:layout_marginStart="11dp"
             android:layout_marginTop="10dp"
             android:text="Invervalos"
+            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/textView18"
             app:layout_constraintTop_toBottomOf="@+id/tolText" />
 
@@ -301,6 +315,7 @@
             android:layout_marginStart="63dp"
             android:layout_marginTop="27dp"
             android:text="Limite inferior"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/iterText" />
 
@@ -311,6 +326,7 @@
             android:layout_marginStart="11dp"
             android:layout_marginTop="27dp"
             android:text="Limite superior"
+            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/textView17"
             app:layout_constraintTop_toBottomOf="@+id/tolText" />
 

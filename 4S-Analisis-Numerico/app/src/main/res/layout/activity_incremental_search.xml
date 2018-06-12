@@ -232,6 +232,7 @@
             android:layout_marginTop="26dp"
             android:text="f(x)="
             android:textSize="20dp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/expText"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/incText" />
@@ -243,6 +244,7 @@
             android:layout_marginStart="33dp"
             android:layout_marginTop="22dp"
             android:text="# Interaciones:"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/expText" />
@@ -254,6 +256,7 @@
             android:layout_marginStart="29dp"
             android:layout_marginTop="22dp"
             android:text="Valor inicial:"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
             app:layout_constraintStart_toEndOf="@+id/textView39"
             app:layout_constraintTop_toBottomOf="@+id/expText" />
@@ -265,6 +268,7 @@
             android:layout_marginBottom="2dp"
             android:layout_marginStart="49dp"
             android:text="Delta:"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
             app:layout_constraintStart_toEndOf="@+id/textView40" />
 

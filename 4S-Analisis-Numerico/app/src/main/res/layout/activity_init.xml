@@ -29,10 +29,7 @@
         android:background="@color/colorAccent"
         android:padding="5dp"
         android:text="Menu Principal"
-<<<<<<< HEAD
-=======
         android:textSize="20dp"
->>>>>>> d8f759e8934ff711c76c105d274ef5225179bba0
         android:textColor="#ffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -50,11 +47,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:text="Análisis Numérico"
-<<<<<<< HEAD
         android:textSize="25dp"
-=======
-        android:textSize="25sp"
->>>>>>> d8f759e8934ff711c76c105d274ef5225179bba0
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"

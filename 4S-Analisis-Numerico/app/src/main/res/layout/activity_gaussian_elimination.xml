@@ -191,6 +191,7 @@
                         android:id="@+id/textView3"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
+                        android:background="@color/colorAccent3"
                         android:gravity="left"
                         android:padding="5dp"
                         android:text="Resultado"

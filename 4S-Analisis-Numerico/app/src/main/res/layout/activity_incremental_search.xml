@@ -205,7 +205,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.971"
             app:layout_constraintStart_toEndOf="@+id/incText"
-            tools:layout_editor_absoluteY="2dp" />
+            tools:layout_editor_absoluteY="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
 
         <TextView
             android:id="@+id/incText"

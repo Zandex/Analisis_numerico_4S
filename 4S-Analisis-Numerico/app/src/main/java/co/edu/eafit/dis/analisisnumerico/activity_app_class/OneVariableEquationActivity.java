@@ -32,57 +32,56 @@ public class OneVariableEquationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_one_variable_equation);
-        listView();
+
     }
 
-    public void listView(){
-        list_view = (ListView)findViewById(R.id.listView);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.method_list,METHODS);
-        list_view.setAdapter(adapter);
-        list_view.setOnItemClickListener(
-                new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        String value = (String)list_view.getItemAtPosition(position);
-                        Intent intent;
-                        switch(value){
-                            case "Busqueda Incremental":
-                                intent = new Intent(OneVariableEquationActivity.this,IncrementalSearchActivity.class);
-                                startActivity(intent);
-                                break;
-                            case "Biseccion":
-                                intent = new Intent(OneVariableEquationActivity.this,BisectionActivity.class);
-                                startActivity(intent);
-                                break;
-                            case "Regla Falsa":
-                                intent = new Intent(OneVariableEquationActivity.this,FalseRuleActivity.class);
-                                startActivity(intent);
-                                break;
-                            case "Fixed Point":
-                                intent = new Intent(OneVariableEquationActivity.this,FixedPointActivity.class);
-                                startActivity(intent);
-                                break;
-                            case "Newton":
-                                intent = new Intent(OneVariableEquationActivity.this,NewtonActivity.class);
-                                startActivity(intent);
-                                break;
-                            case "Secante":
-                                intent = new Intent(OneVariableEquationActivity.this,SecantActivity.class);
-                                startActivity(intent);
-                                break;
-                            case "Raices Multiples":
-                                intent = new Intent(OneVariableEquationActivity.this,MultipleRootsActivity.class);
-                                startActivity(intent);
-                                break;
-                            case "Graficador":
-                                intent = new Intent(OneVariableEquationActivity.this,GraphDataActivity.class);
-                                startActivity(intent);
-                                break;
-                        }
-
-                    }
-                }
-        );
+    public void button_Bincremental(View view) {
+        Intent intent;
+        intent = new Intent(OneVariableEquationActivity.this,IncrementalSearchActivity.class);
+        startActivity(intent);
     }
+    public void button_biseccion(View view) {
+        Intent intent;
+        intent = new Intent(OneVariableEquationActivity.this,BisectionActivity.class);
+        startActivity(intent);
+    }
+
+    public void button_Reglafalse(View view) {
+        Intent intent;
+        intent = new Intent(OneVariableEquationActivity.this,FalseRuleActivity.class);
+        startActivity(intent);
+    }
+
+    public void button_Fixed(View view) {
+        Intent intent;
+        intent = new Intent(OneVariableEquationActivity.this,FixedPointActivity.class);
+        startActivity(intent);
+    }
+
+    public void button_newton(View view) {
+        Intent intent;
+        intent = new Intent(OneVariableEquationActivity.this,NewtonActivity.class);
+        startActivity(intent);
+    }
+
+    public void button_secante(View view) {
+        Intent intent;
+        intent = new Intent(OneVariableEquationActivity.this,SecantActivity.class);
+        startActivity(intent);
+    }
+
+    public void button_multiples(View view) {
+        Intent intent;
+        intent = new Intent(OneVariableEquationActivity.this,MultipleRootsActivity.class);
+        startActivity(intent);
+    }
+
+    public void button_grafi(View view) {
+        Intent intent;
+        intent = new Intent(OneVariableEquationActivity.this,GraphDataActivity.class);
+        startActivity(intent);
+    }
+
+
 }
 

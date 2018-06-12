@@ -30,36 +30,24 @@ public class InitActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_init);
-        listView();
+
     }
 
-    public void listView(){
-        list_view = (ListView)findViewById(R.id.listView);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.method_list,METHODS);
-        list_view.setAdapter(adapter);
-        list_view.setOnItemClickListener(
-                new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        String value = (String)list_view.getItemAtPosition(position);
-                        Intent intent;
-                        switch(value){
-                            case "Ecuaciones de una Variable":
-                                intent = new Intent(InitActivity.this,OneVariableEquationActivity.class);
-                                startActivity(intent);
-                                break;
-                            case "Sistema de Ecuaciones":
-                                intent = new Intent(InitActivity.this,EquationSystemActivity.class);
-                                startActivity(intent);
-                                break;
-                            case "Interpolacion":
-                                intent = new Intent(InitActivity.this,InterpolationActivity.class);
-                                startActivity(intent);
-                                break;
-                        }
+    public void button_Ecuaciones(View view) {
+        Intent intent;
+        intent = new Intent(InitActivity.this,OneVariableEquationActivity.class);
+        startActivity(intent);
+    }
 
-                    }
-                }
-        );
+    public void button_sistemasde(View view) {
+        Intent intent;
+        intent = new Intent(InitActivity.this,EquationSystemActivity.class);
+        startActivity(intent);
+    }
+
+    public void button_Interpolacion(View view) {
+        Intent intent;
+        intent = new Intent(InitActivity.this,InterpolationActivity.class);
+        startActivity(intent);
     }
 }

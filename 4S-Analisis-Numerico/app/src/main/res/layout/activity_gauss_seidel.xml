@@ -19,6 +19,7 @@
             android:layout_marginTop="24dp"
             android:ems="10"
             android:hint="@string/n"
+            android:textStyle="bold"
             android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
@@ -36,7 +37,8 @@
             android:text="Crear"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/nText"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/white"/>
 
         <TextView
             android:id="@+id/bisText"
@@ -46,7 +48,7 @@
             android:layout_marginTop="2dp"
             android:gravity="center"
             android:text="@string/gauss_Seidel"
-            android:textColor="@android:color/background_dark"
+            android:textColor="@android:color/holo_blue_dark"
             android:textSize="25dp"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -62,7 +64,8 @@
             android:onClick="onCalculateClick"
             android:text="@string/send"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/white"/>
 
         <Button
             android:id="@+id/helpBtn"
@@ -238,7 +241,8 @@
                         android:padding="5dp"
                         android:text="@string/n"
                         android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
 
                 </TableRow>
 
@@ -265,6 +269,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="35dp"
             android:text="# Interaciones:"
+            android:textStyle="bold"
             android:textSize="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bisText" />
@@ -275,6 +280,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
             android:text="Tolerancia:"
+            android:textStyle="bold"
             android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView28"
             app:layout_constraintTop_toBottomOf="@+id/searchImageButton" />

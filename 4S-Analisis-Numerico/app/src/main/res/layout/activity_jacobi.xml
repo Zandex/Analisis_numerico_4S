@@ -20,6 +20,7 @@
             android:layout_marginTop="181dp"
             android:ems="10"
             android:hint="@string/n"
+            android:textStyle="bold"
             android:inputType="textPersonName"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -37,17 +38,18 @@
             android:text="Crear"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/white"/>
 
         <TextView
             android:id="@+id/bisText"
             android:layout_width="204dp"
-            android:layout_height="57dp"
+            android:layout_height="52dp"
             android:layout_marginLeft="43dp"
             android:layout_marginTop="2dp"
             android:gravity="center"
             android:text="@string/jacobi"
-            android:textColor="@android:color/background_dark"
+            android:textColor="@android:color/holo_blue_dark"
             android:textSize="25dp"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -57,11 +59,14 @@
             android:id="@+id/sendBtn"
             android:layout_width="133dp"
             android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginLeft="94dp"
             android:layout_marginTop="509dp"
             android:background="@color/colorAccent3"
             android:onClick="onCalculateClick"
             android:text="Calcular"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -69,12 +74,15 @@
             android:id="@+id/helpBtn"
             android:layout_width="49dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="260dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginStart="8dp"
             android:background="@android:drawable/ic_menu_help"
             android:backgroundTint="@android:color/holo_blue_dark"
             android:onClick="onHelpClick"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
             app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bisText"
             app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -234,7 +242,8 @@
                         android:padding="5dp"
                         android:text="@string/n"
                         android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
 
                 </TableRow>
 
@@ -246,8 +255,8 @@
             android:id="@+id/searchImageButton"
             android:layout_width="57dp"
             android:layout_height="54dp"
-            android:layout_marginLeft="280dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginLeft="264dp"
+            android:layout_marginTop="40dp"
             android:backgroundTint="@android:color/white"
             android:onClick="onPivotingClick"
             android:src="@mipmap/search_plus"
@@ -261,6 +270,7 @@
             android:layout_marginStart="63dp"
             android:layout_marginTop="46dp"
             android:text="# Interaciones:"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bisText" />
 
@@ -271,6 +281,7 @@
             android:layout_marginStart="91dp"
             android:layout_marginTop="5dp"
             android:text="Tolerancia:"
+            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/textView42"
             app:layout_constraintTop_toBottomOf="@+id/searchImageButton" />
 

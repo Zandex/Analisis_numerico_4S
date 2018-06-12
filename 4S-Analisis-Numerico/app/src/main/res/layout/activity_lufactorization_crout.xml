@@ -15,12 +15,14 @@
             android:id="@+id/nText"
             android:layout_width="77dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="74dp"
+            android:layout_marginEnd="224dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="84dp"
             android:ems="10"
             android:hint="@string/n"
+            android:textStyle="bold"
             android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,13 +31,16 @@
             android:id="@+id/button"
             android:layout_width="82dp"
             android:layout_height="38dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginLeft="93dp"
             android:layout_marginTop="86dp"
             android:background="@color/colorAccent3"
             android:onClick="onCreateClick"
             android:text="Crear"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/white"/>
 
         <TextView
             android:id="@+id/bisText"
@@ -45,7 +50,7 @@
             android:layout_marginTop="2dp"
             android:gravity="center"
             android:text="LU Factorizacion Crout"
-            android:textColor="@android:color/background_dark"
+            android:textColor="@android:color/holo_blue_dark"
             android:textSize="25dp"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -55,33 +60,41 @@
             android:id="@+id/sendBtn"
             android:layout_width="133dp"
             android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginLeft="93dp"
             android:layout_marginTop="403dp"
             android:background="@color/colorAccent3"
             android:onClick="onCalculateClick"
             android:text="Calcular"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/white"/>
 
         <Button
             android:id="@+id/helpBtn"
             android:layout_width="49dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="260dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="2dp"
             android:background="@android:drawable/ic_menu_help"
             android:backgroundTint="@android:color/holo_blue_dark"
             android:onClick="onHelpClick"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bisText"
             app:layout_constraintTop_toTopOf="parent" />
 
 
         <ScrollView
+            android:id="@+id/scrollView4"
             android:layout_width="212dp"
             android:layout_height="232dp"
+            android:layout_marginEnd="104dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="155dp"
+            android:layout_marginTop="152dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -105,85 +118,13 @@
 
         </ScrollView>
 
-        <ScrollView
-            android:layout_width="76dp"
-            android:layout_height="233dp"
-            android:layout_marginLeft="227dp"
-            android:layout_marginTop="153dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="11dp"
-                android:layout_marginTop="5dp">
-
-                <TableLayout
-                    android:id="@+id/tableVectorB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp">
-
-                </TableLayout>
-
-            </HorizontalScrollView>
-        </ScrollView>
-
-
-        <HorizontalScrollView
-            android:layout_width="145dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="-36dp"
-            android:layout_marginTop="480dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TableLayout
-                android:id="@+id/tableL"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="11dp"
-                android:layout_marginTop="5dp"
-                android:background="@android:drawable/picture_frame"
-                android:stretchColumns="*"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-
-                <TableRow
-                    android:id="@+id/tableRow1L"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/holo_blue_light">
-
-                    <TextView
-                        android:id="@+id/textView3L"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/colorAccent3"
-                        android:gravity="left"
-                        android:padding="5dp"
-                        android:text="Matrix L"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-
-                </TableRow>
-
-            </TableLayout>
-
-        </HorizontalScrollView>
-
 
         <HorizontalScrollView
             android:layout_width="145dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="160dp"
-            android:layout_marginTop="480dp"
+            android:layout_marginTop="468dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -215,7 +156,8 @@
                         android:padding="5dp"
                         android:text="Matrix U"
                         android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
 
                 </TableRow>
 
@@ -228,13 +170,95 @@
             android:id="@+id/searchImageButton"
             android:layout_width="57dp"
             android:layout_height="54dp"
-            android:layout_marginLeft="247dp"
-            android:layout_marginTop="86dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="84dp"
             android:backgroundTint="@android:color/white"
             android:onClick="onPivotingClick"
             android:src="@mipmap/search_plus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.794"
             app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="76dp"
+            android:layout_height="233dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.706"
+            app:layout_constraintStart_toEndOf="@+id/scrollView4"
+            tools:layout_editor_absoluteY="152dp"
+            tools:ignore="MissingConstraints">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="5dp">
+
+                <TableLayout
+                    android:id="@+id/tableVectorB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp">
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+        </ScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="145dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="152dp"
+            android:layout_marginLeft="-36dp"
+            android:layout_marginTop="468dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableLayout
+                android:id="@+id/tableL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:drawable/picture_frame"
+                android:stretchColumns="*"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TableRow
+                    android:id="@+id/tableRow1L"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_light">
+
+                    <TextView
+                        android:id="@+id/textView3L"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent3"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="Matrix L"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </HorizontalScrollView>
 
 
     </android.support.constraint.ConstraintLayout>

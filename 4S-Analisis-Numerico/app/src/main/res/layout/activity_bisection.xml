@@ -114,9 +114,9 @@
             android:backgroundTint="#9fa8da"
             android:onClick="onCalculateClick"
             android:text="Calcular"
+            android:textColor="@android:color/white"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-            android:textColor="@android:color/white"/>
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
         <EditText
             android:id="@+id/resultText"
@@ -133,105 +133,113 @@
 
 
         <HorizontalScrollView
-            android:layout_width="298dp"
-            android:layout_height="82dp"
+            android:layout_width="362dp"
+            android:layout_height="139dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginStart="42dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="7dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/calcBtn">
 
-            <TableLayout
-                android:id="@+id/table"
+            <ScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="11dp"
-                android:layout_marginTop="5dp"
-                android:background="@android:drawable/picture_frame"
-                android:stretchColumns="*"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                tools:layout_editor_absoluteX="68dp"
+                tools:layout_editor_absoluteY="349dp">
 
-
-                <TableRow
-                    android:id="@+id/tableRow1"
+                <TableLayout
+                    android:id="@+id/table"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/colorAccent2">
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:drawable/picture_frame"
+                    android:stretchColumns="*"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="fill_parent"
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="left"
-                        android:padding="5dp"
-                        android:text="@string/n"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/white"/>
+                        android:background="@color/colorAccent2">
 
-                    <TextView
-                        android:id="@+id/textVie3"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="left"
-                        android:padding="5dp"
-                        android:text="@string/xiT"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/white"/>
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text="@string/n"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/textVi3"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="left"
-                        android:padding="5dp"
-                        android:text="@string/xsT"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/white"/>
+                        <TextView
+                            android:id="@+id/textVie3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text="@string/xiT"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textVi3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text="@string/xsT"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
 
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="left"
-                        android:padding="5dp"
-                        android:text="@string/xm"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/white"/>
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text="@string/xm"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="left"
-                        android:padding="5dp"
-                        android:text="@string/ym"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/white"/>
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text="@string/ym"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="left"
-                        android:padding="5dp"
-                        android:text="@string/error"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/white"/>
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:text="@string/error"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
-                </TableRow>
+                    </TableRow>
 
-            </TableLayout>
-
+                </TableLayout>
+            </ScrollView>
         </HorizontalScrollView>
 
         <Button
@@ -246,8 +254,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.925"
             app:layout_constraintStart_toEndOf="@+id/bisText"
-            tools:layout_editor_absoluteY="16dp"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="16dp" />
 
         <TextView
             android:id="@+id/bisText"
@@ -271,8 +279,8 @@
             android:layout_marginTop="32dp"
             android:allowUndo="false"
             android:text="f(x)="
-            android:textStyle="bold"
             android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bisText" />
 

@@ -108,6 +108,7 @@ public class FalseRuleActivity extends AppCompatActivity {
                 xmVal.setText(FalseRuleMethod.tableArray.get(i).get(3));
                 ymVal.setText(FalseRuleMethod.tableArray.get(i).get(4));
                 errVal.setText(FalseRuleMethod.tableArray.get(i).get(5));
+
                 tableRow.addView(nVal);
                 tableRow.addView(xiVal);
                 tableRow.addView(xsVal);

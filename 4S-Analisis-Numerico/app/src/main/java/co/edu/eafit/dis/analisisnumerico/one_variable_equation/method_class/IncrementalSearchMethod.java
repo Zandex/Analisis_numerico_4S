@@ -33,17 +33,19 @@ public class IncrementalSearchMethod {
             while (((y0.multiply(y1)).compareTo(BigDecimal.ZERO) > 0) && (count < iter)){
                 n++;
                 contArray++;
-                tableArray.add(new ArrayList<String>());
+
                 x0 = x1;
                 y0 = y1;
                 x1 = x0.add(delta);
                 y1 = ExpressionEvalUtil.functionEval(f,x1);
+                tableArray.add(new ArrayList<String>());
                 tableArray.get(contArray).add(""+n);
                 tableArray.get(contArray).add(""+x0);
                 tableArray.get(contArray).add(""+y0);
                 tableArray.get(contArray).add(""+x1);
                 tableArray.get(contArray).add(""+y1);
                 count = count + 1;
+                System.out.println("***POR AQUII ");
             }
             if (y1.compareTo(BigDecimal.ZERO) == 0){
                 return x1.toString()+ " Es raiz";

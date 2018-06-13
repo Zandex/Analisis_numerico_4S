@@ -101,6 +101,7 @@ public class IncrementalSearchActivity extends AppCompatActivity {
                 y0Val.setText(IncrementalSearchMethod.tableArray.get(i).get(2));
                 x1Val.setText(IncrementalSearchMethod.tableArray.get(i).get(3));
                 y1Val.setText(IncrementalSearchMethod.tableArray.get(i).get(4));
+
                 tableRow.addView(nVal);
                 tableRow.addView(x0Val);
                 tableRow.addView(y0Val);

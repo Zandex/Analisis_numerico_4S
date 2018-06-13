@@ -90,12 +90,10 @@
             android:id="@+id/scrollView3"
             android:layout_width="262dp"
             android:layout_height="232dp"
-            android:layout_marginEnd="108dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="159dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchImageButton">
 
             <HorizontalScrollView
                 android:layout_width="match_parent"

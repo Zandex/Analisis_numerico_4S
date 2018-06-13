@@ -104,8 +104,8 @@ public class LagrangeActivity extends AppCompatActivity {
 
         TableRow.LayoutParams editTParams=
                 new TableRow.LayoutParams
-                        (180,70);
-        editTParams.setMargins(10, 10, 10, 10);
+                        (180,140);
+        editTParams.setMargins(20, 20, 20, 20);
         int idEditText =0;
         tableRow = new TableRow(this);
         editText= new EditText(this);
